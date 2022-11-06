@@ -52,17 +52,12 @@ body {
     /* outline: 1px solid blue; */
 }
 
-/* .portfolio-nav-link.current, .nav-link.current {
-    color: var(--primary-blue-color);
-    position: relative;
-} */
-
 
 
 .current::after {
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -1px;
     content: "";
 
     width: 100%;
@@ -940,7 +935,7 @@ body {
     width: 100%;
     height: 100%;
     margin: 0;
-    padding: 64px 24px;
+    padding: 63px 24px;
 
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -951,7 +946,7 @@ body {
     background-color: var(--overlay-bg-blue-color);
     overflow: auto;
     transform: translateY(100%);
-    transition: transform 250ms linear;
+    transition: transform var(--transition-color-function);
 }
 
 
